@@ -4,9 +4,9 @@
 # a = acceleration (solving for)
 # t = time
 
-v = input('final velocity: ')
-u = input('inital velocity: ')
-t = input('time: ')
+v = float(input('final velocity: '))
+u = float(input('inital velocity: '))
+t = float(input('time: '))
 
 a = (v-u)/t
 
