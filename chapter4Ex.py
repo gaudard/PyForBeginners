@@ -1,5 +1,5 @@
 #chapter 4 exercise
-#create fibonacci sequence and stop at the first nmber greater than 100
+#create fibonacci sequence and stop at the first number greater than 100
 #Fn = Fn-2+Fn-1, inital values F0=0 and F1=1
 
 Fn = 0
