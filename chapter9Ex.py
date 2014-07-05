@@ -32,9 +32,14 @@ class payroll:
 
 
 
-		
-employee = payroll('jeff', 7.50, 41)
-employee.pay()
-employee.over()
+c = 'y'
+while(c == 'y'):
+	ename = str(input('enter the employee\'s name:\n'))
+	ewage = float(input('enter the employee\'s wage:\n'))
+	ehours = float(input('enter the employee\'s hours:\n'))
+	employee = payroll(ename, ewage, ehours)
+	employee.pay()
+	employee.over()
+	c = input("continue 'y or n'?:\n")
 			
 		
