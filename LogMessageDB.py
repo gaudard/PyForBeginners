@@ -4,7 +4,7 @@
 
 import sqlite3
 
-class DBLogMessage:
+class LogMessageDB:
 	def __init__(self,dbname):
 		self.dbname = dbname
 		db = sqlite3.connect(self.dbname)
@@ -25,10 +25,7 @@ class DBLogMessage:
 		db.commit()
 		db.close()
 
-
-'''
-test = DBLogMessage('firstDatabase.db')
+test = LogMessage('firstDatabase.db')
 test.write('testing')
 test.read()
-'''
 

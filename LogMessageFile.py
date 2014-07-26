@@ -3,14 +3,9 @@
 #create a class with 3 functions. Functions init, read, write.
 
 
-class FileLogMessage:
+class LogMessageFile:
 	def __init__(self,filename):
 		self.filename = filename
-
-	def write(self, message):
-		output = open('logfile.txt', 'a')
-		output.write(message)
-		
 		
 	def read(self):
 		f = open(self.filename, 'r')
@@ -18,11 +13,12 @@ class FileLogMessage:
 		for each in lines:
 			print(each, end='')
 		
-
+	def write(self, message):
+		output = open('logfile.txt', 'a')
+		output.write(message)
 		
-'''
-test = FileLogMessage('test.txt')
+
+test = LogMessage('test.txt')
 test.write('testing..' + '\n')
 test.read()
-'''
 
